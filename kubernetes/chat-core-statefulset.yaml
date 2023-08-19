@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: chat-core-statefulset
+  namespace: chat-core-spring
+
 spec:
   serviceName: chat-core-statefulset
   replicas: 2
